@@ -1,0 +1,12 @@
+<h1 class="center">My Little Angular Investment Calculator</h1>
+<p class="center">
+  A Small Angular Exercise (Don't Take My Financial Advice Seriously!)
+</p>
+<app-header class="center"></app-header>
+<app-user-input
+  (calculate)="onCalculateInvestmentResults($event)"
+></app-user-input>
+<app-investment-results [results]="resultsData"></app-investment-results>
+@if (!resultsDisplaying) {
+<app-footer></app-footer>
+}

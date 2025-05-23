@@ -1,0 +1,71 @@
+<h1 id="main-title">Main Title</h1>
+<h2 id="section">Section</h2>
+<h3 id="subsection">Subsection</h3>
+<h4 id="sub-subsection">Sub-subsection</h4>
+<p>This is <strong>bold text</strong>. This is <em>italic text</em>.
+This is <strong><em>bold and italic</em></strong>.</p>
+<ul>
+<li>Item 1</li>
+<li>Item 2
+<ul>
+<li>Nested Item 2.1</li>
+<li>Nested Item 2.2</li>
+</ul></li>
+<li>Item 3</li>
+</ul>
+<ol type="1">
+<li>First item</li>
+<li>Second item
+<ol type="1">
+<li>Nested ordered item</li>
+<li>Another nested item</li>
+</ol></li>
+<li>Third item Visit <a href="https://www.google.com"
+title="Search Engine">Google</a> for more information. <img
+src="images/sunset.jpg" title="Gorgeous Sunset"
+alt="A beautiful sunset" /> Use the <code>console.log()</code> function
+to debug.</li>
+</ol>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">greet</span>(name) {</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="vs">`Hello, </span><span class="sc">${</span>name<span class="sc">}</span><span class="vs">!`</span><span class="op">;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="fu">greet</span>(<span class="st">&quot;World&quot;</span>))<span class="op">;</span></span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode html"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;!DOCTYPE</span> html<span class="dt">&gt;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">html</span><span class="ot"> lang</span><span class="op">=</span><span class="st">&quot;en&quot;</span><span class="dt">&gt;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">h1</span><span class="dt">&gt;</span>Hello!<span class="dt">&lt;/</span><span class="kw">h1</span><span class="dt">&gt;</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">html</span><span class="dt">&gt;</span></span></code></pre></div>
+<hr />
+<p>This is content after a horizontal rule.</p>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Header 1</th>
+<th>Header 2</th>
+<th>Header 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Row 1 Col 1</td>
+<td>Row 1 Col 2</td>
+<td>Row 1 Col 3</td>
+</tr>
+<tr>
+<td>Row 2 Col 1</td>
+<td>Row 2 Col 2</td>
+<td>Row 2 Col 3</td>
+</tr>
+</tbody>
+</table>
+<ul class="task-list">
+<li><label><input type="checkbox" checked="" />Task
+completed</label></li>
+<li><label><input type="checkbox" />Task not completed</label></li>
+</ul>
+<p>pandoc [input_file] [output_options] [filters_and_extensions]</p>
+<p>pandoc my_document.md -o my_document.html</p>

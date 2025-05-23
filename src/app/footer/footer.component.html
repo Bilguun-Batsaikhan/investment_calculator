@@ -1,0 +1,56 @@
+<body>
+  <div class="container">
+    <h1>How the Calculation Works</h1>
+
+    <p>
+      This investment calculator operates on an annual compounding basis, adding
+      contributions at the end of each year. Here's a breakdown of the key
+      calculations performed for each year:
+    </p>
+
+    <h2>Interest Earned in Year:</h2>
+    <p>
+      This is calculated by multiplying the <code>investmentValue</code> at the
+      beginning of the year by the <code>expectedReturn</code> rate.
+    </p>
+    <p>
+      <strong>Interest Earned =</strong>
+      <code>Current Investment Value × (Expected Return / 100)</code>
+    </p>
+
+    <h2>Investment Value at End of Year:</h2>
+    <p>
+      The <code>investmentValue</code> is updated by adding the
+      <code>interestEarnedInYear</code> and the
+      <code>annualInvestment</code> (your new contribution for that year). This
+      new value becomes the starting point for the next year's calculation.
+    </p>
+    <p>
+      <strong>Value End of Year =</strong>
+      <code
+        >Starting Investment Value + Interest Earned + Annual Investment</code
+      >
+    </p>
+
+    <h2>Total Amount Invested:</h2>
+    <p>
+      This simply tracks the cumulative amount of money you have personally
+      contributed.
+    </p>
+    <p>
+      <strong>Total Amount Invested =</strong>
+      <code>Initial Investment + (Annual Investment × Current Year)</code>
+    </p>
+
+    <h2>Total Interest Earned:</h2>
+    <p>
+      This represents the total profit your investment has generated up to that
+      point. It's the <code>valueEndOfYear</code> minus all the money you've put
+      in.
+    </p>
+    <p>
+      <strong>Total Interest =</strong>
+      <code>Value End of Year - Total Amount Invested</code>
+    </p>
+  </div>
+</body>
